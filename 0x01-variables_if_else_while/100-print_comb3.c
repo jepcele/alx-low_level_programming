@@ -12,15 +12,19 @@ int main(void)
 	{
 		while (j < 58)
 		{
-			if (i == j)
+			if (i == j || i < j)
 				continue;
 			putchar(i);
 			putchar(j);
-			if (i == )
+			if (i == 56 && j == 57)
 			{
 				putchar(44);
 				putchar(32);
 			}
+			j++;
 		}
+		i++;
 	}
+	putchar('\0');
+	return (0);
 }
