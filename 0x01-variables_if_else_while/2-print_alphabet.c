@@ -11,6 +11,7 @@ int main(void)
 	while (asc < 123)
 	{
 		putchar(asc);
+		putchar('\n');
 		asc++;
 	}
 	return (0);
