@@ -10,7 +10,7 @@ int main(void)
 
 	while (lower < 123)
 	{
-		if (lower != 101 || lower != 123)
+		if (lower != 101 || lower != 113)
 		{
 			putchar(lower);
 		}
