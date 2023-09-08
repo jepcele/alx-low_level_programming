@@ -10,9 +10,10 @@ int main(void)
 
 	while (lower < 123)
 	{
-		if (lower == 101 || lower == 123)
-			continue;
-		putchar(lower);
+		if (lower != 101 || lower != 123)
+		{
+			putchar(lower);
+		}
 		lower++;
 	}
 	putchar('\n');
