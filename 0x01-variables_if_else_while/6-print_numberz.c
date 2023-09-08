@@ -6,14 +6,14 @@
  * Return: 0
  */
 int main(void)
-{
-        int nums = 48;
 
-        while (nums < 58)
-        {
-                putchar(nums);
-                nums++;
-        }
+	int nums = 48;
+
+	while (nums < 58)
+	{
+		putchar(nums);
+		nums++;
+	}
 	putchar('\n');
 	return (0);
 }
