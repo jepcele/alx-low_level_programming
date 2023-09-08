@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	int i = 47, j = 48;
+	int i = 48, j = 48;
 
 	while (i < 58)
 	{
@@ -14,6 +14,7 @@ int main(void)
 		{
 			if (i >= j)
 				continue;
+			putchar(i);
 			putchar(j);
 			if (i == 56 && j == 57)
 			{
