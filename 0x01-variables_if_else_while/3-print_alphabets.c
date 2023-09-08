@@ -9,7 +9,8 @@ int main(void)
 {
 	int lower = 97;
 	int upper = 65;
-	while(lower < 123)
+
+	while (lower < 123)
 	{
 		putchar(lower);
 		lower++;
