@@ -12,7 +12,7 @@ int main(void)
 	{
 		while (j < 58)
 		{
-			while (j < 58)
+			while (k < 58)
 			{
 				if (i < j && j < k)
 				{
@@ -27,10 +27,10 @@ int main(void)
 				}
 				k++;
 			}
+			k = 48;
 			j++;
 		}
 		j = 48;
-		k = 48;
 		i++;
 	}
 	putchar('\n');
