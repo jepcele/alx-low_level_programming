@@ -14,8 +14,25 @@ int main(void)
 		{
 			while (j < 58)
 			{
-
+				if (i < j && j < k)
+				{
+					putchar(i);
+					putchar(j);
+					putchar(k);
+					if (i < 55)
+					{
+						putchar(44);
+						putchar(32);
+					}
+				}
+				k++;
 			}
+			j++;
 		}
+		j = 48;
+		k = 48;
+		i++
 	}
+	putchar('\n');
+	return (0);
 }
