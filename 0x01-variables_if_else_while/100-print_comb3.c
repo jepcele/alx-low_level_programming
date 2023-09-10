@@ -16,14 +16,15 @@ int main(void)
 			{
 				putchar(i);
 				putchar(j);
-			}
-			if (i < 57 && j < 58)
-			{
-				putchar(44);
-				putchar(32);
+				if (i < 57 && j < 58)
+				{
+					putchar(44);
+					putchar(32);
+				}
 			}
 			j++;
 		}
+		j = 48;
 		i++;
 	}
 	putchar('\n');
