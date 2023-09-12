@@ -22,14 +22,24 @@ int main(void)
 					putchar(j);
 					if (i < 57 && j < 56)
 					{
-						putchar(44);
 						putchar(32);
 					}
 					putchar(k);
 					putchar(l);
+					if (i < 58 && j < 57)
+					{
+						putchar(44);
+					}
+					l++;
 				}
+				l = 48;
+				k++;
 			}
+			k = 48;
+			j++;
 		}
+		j = 48;
+		i++;
 	}
 	putchar('\n');
 	return (0);
