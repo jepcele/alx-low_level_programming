@@ -17,9 +17,9 @@ void print_alphabet_x10(void)
 		{
 			_putchar(alph);
 			if ( alph == 'z')
-				break;
 			alph++;
 		}
 		_putchar('\n');
+		i++;
 	}
 }
