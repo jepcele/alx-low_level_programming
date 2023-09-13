@@ -27,6 +27,8 @@ void jack_bauer(void)
 					_putchar(l);
 					_putchar('\n');
 					l++;
+					if (i == 50 && j == 52)
+						break;
 				}
 				k++;
 			}
