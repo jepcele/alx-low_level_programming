@@ -14,14 +14,14 @@ void jack_bauer(void)
 		j = 48;
 		while (j < 58)
 		{
+			if ((i == 50) && (j == 52))
+				break;
 			k = 48;
 			while (k < 54)
 			{
 				l = 48;
 				while (l < 58)
 				{
-					if ((i == 50) && (j == 52))
-                                                break;
 					_putchar(i);
 					_putchar(j);
 					_putchar(58);
