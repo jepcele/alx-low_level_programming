@@ -10,11 +10,8 @@ int _islower(int c)
 
 	while (alph <= 'z')
 	{
-		_putchar(alph);
 		if (alph == c)
 			return (1);
-		if (alph == 'z')
-			break;
 		alph++;
 	}
 	return (0);
