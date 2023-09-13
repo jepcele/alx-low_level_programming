@@ -4,7 +4,7 @@
  *
  * Return: 0
  */
-int main(void)
+void print_alphabet(void)
 {
 	char alp = 'a'; 
 
@@ -16,5 +16,5 @@ int main(void)
 			break;
 	}
 	_putchar('\n');
-	return (0);
+	return ;
 }
