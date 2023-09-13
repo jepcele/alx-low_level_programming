@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * main - prints every minute of the day of Jack Bauer,
+ * jack_bauer - prints every minute of the day of Jack Bauer,
  * starting from 00:00 to 23:59.
  *
  * Return: void
@@ -15,7 +15,7 @@ void jack_bauer(void)
 		while (j < 58)
 		{
 			k = 48;
-			while ( k < 54)
+			while (k < 54)
 			{
 				l = 48;
 				while (l < 58)
