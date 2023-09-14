@@ -4,7 +4,7 @@
  * @a: first value
  * @b: second value
  *
- * return: int value 
+ * Return: int value
  */
 int add(int a, int b)
 {
