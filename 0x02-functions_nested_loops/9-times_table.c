@@ -18,7 +18,6 @@ void times_table(void)
 			prod = i * j;
 			if (i < 9)
 			{
-				printf("%d", prod);
 				_putchar(44);
 				_putchar(32);
 			}
