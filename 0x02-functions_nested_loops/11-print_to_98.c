@@ -11,15 +11,31 @@
 void print_to_98(int n)
 {
 	int i = n;
-	while (i < 99)
+	if (n < 99)
 	{
-		printf("%d", i);
-		if (i < 98)
+		while (i < 99)
 		{
-			putchar(44);
-			putchar(32);
+			printf("%d", i);
+			if (i < 98)
+			{
+				putchar(44);
+				putchar(32);
+			}
+			i++;
 		}
-		i++;
+	}
+	else
+	{
+		while (n > 97)
+		{
+			printf("%d", i);
+                        if (i > 98)
+                        {
+                                putchar(44);
+                                putchar(32);
+                        }
+                        i--;
+		}
 	}
 	putchar('\n');
 }
