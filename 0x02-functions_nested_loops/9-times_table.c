@@ -16,6 +16,7 @@ void times_table(void)
 		while (j < 10)
 		{
 			prod = i * j;
+			_putchar(65);
 			if (i < 9)
 			{
 				_putchar(44);
