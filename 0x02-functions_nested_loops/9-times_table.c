@@ -16,7 +16,7 @@ void times_table(void)
 		while (j < 58)
 		{
 			prod = i * j;
-			prinf("%d", prod);
+			printf("%d", prod);
 			if (i < 57)
 			{
 				_putchar(44);
