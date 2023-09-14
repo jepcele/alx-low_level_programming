@@ -26,7 +26,7 @@ void print_to_98(int n)
 	}
 	else
 	{
-		while (n > 97)
+		while (i > 97)
 		{
 			printf("%d", i);
                         if (i > 98)
