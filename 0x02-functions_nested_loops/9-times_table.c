@@ -6,7 +6,7 @@
  */
 void times_table(void)
 {
-	int i = 48; int j;
+	int i = 48, j, prod;
 
 	while (i < 58)
 	{
@@ -14,7 +14,14 @@ void times_table(void)
 		
 		while (j < 58)
 		{
-			i
+			prod = i * j;
+			_putchar('0' + prod);
+			if (i < 57)
+			{
+				_putchar(44);
+				_putchar(32);
+			}
+			j++;
 		}
 	}
 }
