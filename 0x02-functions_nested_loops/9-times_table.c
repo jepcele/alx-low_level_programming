@@ -7,17 +7,17 @@
  */
 void times_table(void)
 {
-	int i = 48, j, prod;
+	int i = 0, j, prod;
 
-	while (i < 58)
+	while (i < 10)
 	{
-		j = 48;
+		j = 0;
 
-		while (j < 58)
+		while (j < 10)
 		{
 			prod = i * j;
 			printf("%d", prod);
-			if (i < 57)
+			if (i < 9)
 			{
 				_putchar(44);
 				_putchar(32);
