@@ -8,10 +8,10 @@
  */
 int _isdigit(int c)
 {
-	int num = 0;
+	int num = 48;
 	int boolean = 0;
 
-	while (num < 10)
+	while (num  < 58)
 	{
 		if (c == num)
 		{
