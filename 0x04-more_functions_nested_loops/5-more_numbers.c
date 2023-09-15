@@ -9,7 +9,6 @@ void more_numbers(void)
 {
 	int i , j, k, l = 0;
 
-
 	while (l < 10)
 	{
 		i = 48;
