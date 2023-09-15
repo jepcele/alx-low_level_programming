@@ -20,10 +20,10 @@ void more_numbers(void)
 			while (j < 53)
 			{
 				_putchar(j);
+				_putchar('\n');
 				j++;
 			}
 		}
-		_putchar('\n');
 		i++;
 	}
 }
