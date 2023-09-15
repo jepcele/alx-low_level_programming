@@ -18,5 +18,6 @@ void print_square(int size)
 			j++;
 		}
 		_putchar('\n');
+		i++;
 	}
 }
