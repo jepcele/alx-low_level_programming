@@ -7,7 +7,7 @@
  */
 void more_numbers(void)
 {
-	int i , j, k, l = 0;
+	int i, j, k, l = 0;
 
 	while (l < 10)
 	{
@@ -15,14 +15,14 @@ void more_numbers(void)
 		while (i < 58)
 		{
 			_putchar(i);
-			
+
 			if (i == 57)
 			{
 				j = 49;
 				while (j < 50)
 				{
 					k = 48;
-					
+
 					while (k < 53)
 					{
 						_putchar(j);
