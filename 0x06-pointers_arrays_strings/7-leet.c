@@ -11,10 +11,10 @@ char *leet(char *s)
 	char arr[5][2] = {{'a', 'A'}, {'e', 'E'}, {'o', 'O'}, {'t', 'T'}, {'l', 'L'}};
 	char code[5] = {'4', '3', '0', '7', '1'};
 
-	while(*(s + i) != '\0')
+	while (*(s + i) != '\0')
 	{
 		j = 0;
-		while ( j < 5)
+		while (j < 5)
 		{
 			if (*(s + i) == arr[j][0] || *(s + i) == arr[j][1])
 				*(s + i) = code[j];
