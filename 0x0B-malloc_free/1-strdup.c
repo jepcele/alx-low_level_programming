@@ -21,11 +21,11 @@ char *_strdup(char *str)
 
 	while (*(str + i) != '\0')
 	{
-		if (*(str + i + i) == '\0')
-		{
-			dup = malloc(i + 1);
-		}
 		i++;
+		if (*(str + i) == '\0')
+		{
+			dup = malloc(i);
+		}
 	}
 
 	if (!dup)
