@@ -8,8 +8,8 @@
  */
 int main(int argc, char **argv)
 {
-	if (argv[0])
-		printf("%i", argc);
+	if (argv[argc - 1])
+		printf("%d\n", argc);
 
 	return (0);
 }
