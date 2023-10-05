@@ -12,13 +12,15 @@ int main(int argc, char **argv)
 
 	if (argc < 3)
 	{
-		printf("Error");
+		printf("Error\n");
+		return (1);
 	}
 	else
 	{
-		for (i = 1; i < 3; i++)
-		{
-			
-		}
+		val1 = atoi(arg[1]);
+		val2 = atoi(arg[2]);
+		sum = val1 * val2;
+		printf("%d\n", sum);
 	}
+	return (0);
 }
