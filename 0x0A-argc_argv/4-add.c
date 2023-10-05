@@ -10,7 +10,8 @@
  */
 int main(int argc, char **argv)
 {
-	int sum = 0;
+	int sum = 0 , i;
+	char *arg;
 	
 	if (argc < 2) 
 	{
@@ -18,9 +19,9 @@ int main(int argc, char **argv)
 		return 0;
 	}
 	
-	for (int i = 1; i < argc; i++)
+	for (i = 1; i < argc; i++)
 	{
-		char *arg = argv[i];
+		arg = argv[i];
 		while (*arg)
 		{
 			if (!isdigit(*arg))
