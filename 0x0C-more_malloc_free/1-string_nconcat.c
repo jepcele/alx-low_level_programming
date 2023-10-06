@@ -35,17 +35,19 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	if (!p)
 		return (NULL);
 	i = 0;
-	while (*(s2 + i) != '\0')
+	while (*(s1 + i) != '\0')
 	{
-		*(p + i) = *(s2 + i);
+		*(p + i) = *(s1 + i);
 		i++;
 	}
 	j = 0;
-	while ( j < n)
+	while (*(s2 + j) != '\0')
 	{
 		*(p + i) = *(s2 + j);
 		i++;
 		j++;
+		if (j == n)
+			break;
 	}
 	*(p + j) = '\0';
 	return (p);
