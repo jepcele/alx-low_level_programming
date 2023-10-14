@@ -9,13 +9,13 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char character, *str, type[] = {'c', 'i', 'f', 's'};
-	int i, digit, j, choice;
-	float flt;
+	char *str, type[] = {'c', 'i', 'f', 's'};
+	int i, digit, j, choice, character;
+	double flt;
 
 	va_start(args, format);
 
-	i = 0
+	i = 0;
 	while (*(format + i) != '\0')
 	{
 		j = 0;
