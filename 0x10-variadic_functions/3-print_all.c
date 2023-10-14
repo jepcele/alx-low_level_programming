@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 
 		while (j < 4)
 		{
-			if (*(format + j) == type[j])
+			if (*(format + i) == type[j])
 			{
 				choice = j;
 
@@ -44,7 +44,7 @@ void print_all(const char * const format, ...)
 						str = va_arg(args, char *);
 						if (!str)
 						{
-							printf("(nil");
+							printf("(nil)");
 							break;
 						}
 						printf("%s", str);
