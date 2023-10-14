@@ -9,9 +9,9 @@
 void print_all(const char * const format, ...)
 {
 	va_list args;
-	char *str, type[] = {'c', 'i', 'f', 's'};
-	int i, digit, j, choice, character;
-	double flt;
+	char character, *str, type[] = {'c', 'i', 'f', 's'};
+	int i, digit, j, choice;
+	float flt;
 
 	va_start(args, format);
 
@@ -29,7 +29,7 @@ void print_all(const char * const format, ...)
 				switch(choice)
 				{
 					case 0:
-						character = va_arg(args, char);
+						character = va_arg(args, int);
 						printf("%c", character);
 						break;
 					case 1:
@@ -37,7 +37,7 @@ void print_all(const char * const format, ...)
 						printf("%i", digit);
 						break;
 					case 2:
-						flt = va_arg(args, float);
+						flt = va_arg(args, double);
 						printf("%f", flt);
 						break;
 					case 3:
