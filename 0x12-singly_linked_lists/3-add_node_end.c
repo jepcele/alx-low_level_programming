@@ -3,7 +3,7 @@
 #include <string.h>
 /**
  * add_node_end - function that adds a new node at the end of a list_t list.
- * @head - head of the node pointer
+ * @head: head of the node pointer
  * @str: string to add to the node
  *
  * Return: the address of the new element, or NULL if it failed
