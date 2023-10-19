@@ -13,7 +13,7 @@ size_t print_list(const list_t *h)
 	const list_t *temp = h;
 	size_t num_of_nodes = 0;
 
-	while(temp != NULL)
+	while (temp != NULL)
 	{
 		if (!temp->str)
 			printf("[%i] (nil)\n", temp->len);
