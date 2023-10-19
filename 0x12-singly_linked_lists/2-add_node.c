@@ -3,8 +3,8 @@
 #include "lists.h"
 /**
  * add_node - adds a new node at the beginning of a list_t list.
- * @head - pointer to head of the linkedlist pointer
- * @str - string to store in the linked list
+ * @head: pointer to head of the linkedlist pointer
+ * @str: string to store in the linked list
  *
  * Return: the address of the new element, or NULL if it failed
  */
