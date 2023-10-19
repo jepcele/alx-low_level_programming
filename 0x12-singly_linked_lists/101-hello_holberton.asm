@@ -1,21 +1,21 @@
 section .data
-    format db "Hello, Holberton",10,0 ; 10 is the ASCII code for newline, 0 is string terminator
+    message db 'Hello, Holberton', 0
 
 section .text
-    extern printf, exit
+    global _start
 
-global main
+_start:
+    ; Set up the arguments for the write system call
+    mov eax, 4        ; syscall number for write
+    mov edi, 1        ; file descriptor 1 is stdout
+    mov edx, 15       ; number of bytes to write
+    lea rsi, [message] ; pointer to the message
 
-main:
-    ; Push the address of the format string onto the stack
-    push format
-
-    ; Call printf
-    call printf
-
-    ; Clean up the stack
-    add esp, 4
+    ; Invoke the system call
+    syscall
 
     ; Exit the program
-    call exit
+    mov eax, 60       ; syscall number for exit
+    xor edi, edi      ; Exit code 0
+    syscall
 
