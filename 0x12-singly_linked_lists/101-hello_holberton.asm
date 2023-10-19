@@ -1,23 +1,21 @@
 section .data
-	format db "Hello, %s", 0
-section .data
-	str db "Holberton", 0
+    format db "Hello, Holberton",10,0 ; 10 is the ASCII code for newline, 0 is string terminator
 
 section .text
-    extern printf
+    extern printf, exit
 
 global main
 
 main:
-    ; Prepare arguments for printf
-    mov rdi, format
-    mov rsi, str  ; Address of the string "Holberton"
+    ; Push the address of the format string onto the stack
+    push format
 
     ; Call printf
     call printf
 
+    ; Clean up the stack
+    add esp, 4
+
     ; Exit the program
-    mov eax, 60         ; syscall number for exit
-    xor edi, edi        ; exit code 0
-    syscall
-EOL
+    call exit
+
