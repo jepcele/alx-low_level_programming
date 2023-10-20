@@ -41,13 +41,13 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	j = 0;
-	while (*(s2 + j) != '\0')
+	while (j < n)
 	{
 		*(p + i) = *(s2 + j);
-		i++;
 		j++;
+		i++;
 	}
-	*(p + j) = '\0';
+	*(p + i) = '\0';
 	return (p);
 
 }
